@@ -3,6 +3,8 @@ import {View, SafeAreaView, Text, StyleSheet} from 'react-native';
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import {NavigationContainer} from '@react-navigation/native';
 
+import {ChannelList} from './src/components/ChannelList'
+
 function ChannelScreen({navigation, route}){
   return (
     <SafeAreaView>
@@ -14,7 +16,7 @@ function ChannelScreen({navigation, route}){
 const ChannelListDrawer = (props) => {
   return (
     <SafeAreaView>
-      <Text>Drawer</Text>
+      <ChannelList />
     </SafeAreaView>
   )
 }
